@@ -1,0 +1,8 @@
+ARG seed 0
+ARG address space size 16k
+ARG phys mem size 0
+ARG page size 4k
+ARG verbose True
+ARG addresses -1
+
+Error: must specify a non-zero physical memory size.

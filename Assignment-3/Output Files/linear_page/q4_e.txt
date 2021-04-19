@@ -1,0 +1,23 @@
+ARG seed 0
+ARG address space size 16k
+ARG phys mem size 64k
+ARG page size 32k
+ARG verbose True
+ARG addresses -1
+
+
+The format of the page table is simple:
+The high-order (left-most) bit is the VALID bit.
+  If the bit is 1, the rest of the entry is the PFN.
+  If the bit is 0, the page is not valid.
+Use verbose mode (-v) if you want to print the VPN # by
+each entry of the page table.
+
+Page Table (from entry 0 down to the max size)
+
+Virtual Address Trace
+
+Traceback (most recent call last):
+  File "paging-linear-translate.py", line 174, in <module>
+    if pt[vpn] < 0:
+IndexError: array index out of range

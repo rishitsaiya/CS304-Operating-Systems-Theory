@@ -1,0 +1,8 @@
+ARG seed 0
+ARG address space size 65k
+ARG phys mem size 64k
+ARG page size 4k
+ARG verbose True
+ARG addresses -1
+
+Error: physical memory size must be GREATER than address space size (for this simulation)

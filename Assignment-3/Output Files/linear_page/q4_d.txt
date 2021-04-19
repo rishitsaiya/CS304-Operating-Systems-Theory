@@ -1,0 +1,13 @@
+ARG seed 0
+ARG address space size 16k
+ARG phys mem size 64k
+ARG page size 0
+ARG verbose True
+ARG addresses -1
+
+Traceback (most recent call last):
+  File "paging-linear-translate.py", line 85, in <module>
+    mustbemultipleof(asize, pagesize, 'address space must be a multiple of the pagesize')
+  File "paging-linear-translate.py", line 14, in mustbemultipleof
+    if (int(float(bignum)/float(num)) != (int(bignum) / int(num))):
+ZeroDivisionError: float division by zero
